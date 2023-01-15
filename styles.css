@@ -1,0 +1,253 @@
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+    --primary-text-color: #181820;
+    --secondary-text-color: #5c5c62;
+    --durability-text-color: #6a737d9c;
+    --icon-color: #6a737d;
+    --border-color: #ff9a0045;
+    --text-decoration-color: #ff9a00;
+}
+section {
+    height: 100vh;
+}
+
+.container {
+    margin: 0 65px;;
+    padding: 0;
+    max-width: 900px;
+}
+.intro {
+    display:flex;
+    align-items: center;
+  
+}
+.intro img {
+    height:80vh;
+    border-radius: 105px;
+    margin-top: 50px;
+}
+.text{
+    align-items: center;
+    justify-content: center;
+}
+.text h2{
+    font-size:2.5rem;
+    font-weight: 600;
+    width:600px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.intro p{
+    font-size:1.1rem;
+    font-weight: 500;
+    width:500px;
+    margin-top: 15px;
+    line-height: 35px;
+}
+
+#skillSet{
+    height: 90vh;
+    background:  #f5f5f5;
+}
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-skill img{
+    height:60vh;
+    width: 150%;
+    padding-left: 270px;
+}
+.text-skill p{
+    margin: 0;
+    font-size: 1.2rem;
+    width:650px;
+    padding-left: 270px;
+
+}
+
+.skills h3{
+font-size: 2.5rem;
+padding-top: 40px;
+font-weight: 600;
+padding-left: 290px;
+color: black;
+align-items: center;
+margin-left: 50px;
+}
+@media screen and (max-width: 576px) {
+
+    .main-info,
+    .contact_info_container {
+        flex-direction: column;
+    }
+
+    .contact_info_container {
+        align-items: center;
+    }
+
+    .contact-info__block:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .experiences {
+        margin-right: 0;
+    }
+}
+
+/* experience and additional styles */
+
+#exp{
+    height:80vh;
+}
+.experiences {
+    padding-top: 20px;
+    margin-right: 50px;
+
+}
+.experiences h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    padding-top: 40px;
+    font-weight: 600;
+    padding-left: 290px;
+    color: black;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.experiences p{
+    font-size: 1.2rem;
+font-weight: 500;
+padding-left: 480px;
+padding-bottom: 30px;
+color: black;
+align-items: center;
+margin-left: 50px;
+}
+.experiences__company-project{
+    height:350px;
+    width: 280px;
+    border: 2px solid #5c5c62;
+    border-radius: 15px;
+}
+.experiences__company-project img{
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    height:30vh;
+}
+.experiences__company-project h3{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+.experiences__company-project span{
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+.experiences__company-project-second{
+    height:350px;
+    width: 280px;
+    border: 2px solid #5c5c62;
+    border-radius: 15px;
+}
+
+.experiences__company-project-second img{
+    height:28vh;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.experiences__company-project-second h3{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+.experiences__company-project-responsibilities {
+    margin-left: 50px;
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 145px;
+    align-items: center;
+    justify-content: center;
+}
+.additional-info__education h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-weight: 600;
+    /* padding-left: 190px; */
+    color: black;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.additional-info__education-university{
+    height:350px;
+    width: 280px;
+    border: 2px solid #5c5c62;
+    border-radius: 15px;
+}
+.additional-info__education-university img{
+    height:28vh;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.additional-info__education-university h3, .additional-info__languages h3{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+.additional-info__education-university p, .additional-info__languages p{
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.additional-info__languages{
+    height:350px;
+    width: 280px;
+    border: 2px solid #5c5c62;
+    border-radius: 15px;
+}
+.additional-info__languages img{
+    height:28vh;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.fields{
+    display: flex;
+    flex-direction: row;
+    gap: 145px;
+    align-items: center;
+    justify-content: center;
+}
